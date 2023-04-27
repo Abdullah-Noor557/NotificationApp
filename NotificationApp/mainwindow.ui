@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>598</height>
+    <width>861</width>
+    <height>653</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -21,7 +21,7 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>800</width>
+    <width>16777215</width>
     <height>16777215</height>
    </size>
   </property>
@@ -31,14 +31,23 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Notification Board App</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextOnly</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(51, 55, 62);</string>
+    <string notr="true">background-color: rgb(34, 34, 34);</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -50,19 +59,25 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
-      <widget class="QWidget" name="page_4">
+      <widget class="QWidget" name="Login">
        <property name="enabled">
         <bool>true</bool>
        </property>
+       <property name="maximumSize">
+        <size>
+         <width>8320749</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <layout class="QVBoxLayout" name="verticalLayout_6">
-        <item>
+        <item alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_5">
           <property name="maximumSize">
            <size>
             <width>16777212</width>
-            <height>111</height>
+            <height>100</height>
            </size>
           </property>
           <property name="font">
@@ -87,13 +102,19 @@
           </property>
          </widget>
         </item>
-        <item>
+        <item alignment="Qt::AlignHCenter">
          <widget class="QFrame" name="frame_4">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>550</height>
+           </size>
+          </property>
           <property name="styleSheet">
            <string notr="true">color: rgb(58, 248, 0);
 border-color: rgb(58, 248, 0);
 border-style: solid;
-border: 5px solid green;</string>
+border: 1px solid rgb(58, 248, 0);</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -107,7 +128,7 @@ border: 5px solid green;</string>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>120</height>
+               <height>250</height>
               </size>
              </property>
              <property name="frameShape">
@@ -150,6 +171,12 @@ border: none;</string>
               </item>
               <item>
                <widget class="QFrame" name="frame_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
                 <property name="styleSheet">
                  <string notr="true">border: none;</string>
                 </property>
@@ -163,8 +190,8 @@ border: none;</string>
                  <item>
                   <widget class="QToolButton" name="admnBtn">
                    <property name="styleSheet">
-                    <string notr="true">background: darkgreen;
-color: white;
+                    <string notr="true">background: rgb(58, 248, 0);
+color: black;
 </string>
                    </property>
                    <property name="text">
@@ -195,11 +222,36 @@ color: white;
                 </layout>
                </widget>
               </item>
+              <item>
+               <widget class="QLabel" name="label_12">
+                <property name="styleSheet">
+                 <string notr="true">color:red;</string>
+                </property>
+                <property name="text">
+                 <string>SELECT CORRECT USERTYPE OR LOGIN WILL NOT WORK</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
              </layout>
             </widget>
            </item>
            <item>
             <widget class="QFrame" name="frame_3">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>210</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>350</height>
+              </size>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -228,9 +280,7 @@ color: white;
                 </property>
                 <property name="styleSheet">
                  <string notr="true">color: rgb(58, 248, 0);
-border-color: rgb(58, 248, 0);
-border-style: solid;
-border: 1px solid green;</string>
+border:none</string>
                 </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -241,8 +291,8 @@ border: 1px solid green;</string>
                 <property name="lineWidth">
                  <number>10</number>
                 </property>
-                <layout class="QVBoxLayout" name="verticalLayout_2">
-                 <item alignment="Qt::AlignLeft">
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
                   <widget class="QLabel" name="label">
                    <property name="maximumSize">
                     <size>
@@ -253,6 +303,8 @@ border: 1px solid green;</string>
                    <property name="font">
                     <font>
                      <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                     <bold>true</bold>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -266,11 +318,20 @@ border: none;</string>
                  </item>
                  <item>
                   <widget class="QLineEdit" name="usrTxtBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>40</height>
+                    </size>
+                   </property>
                    <property name="maximumSize">
                     <size>
                      <width>756</width>
                      <height>16777215</height>
                     </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border:3px solid rgb(58, 248, 0);</string>
                    </property>
                    <property name="text">
                     <string/>
@@ -299,9 +360,7 @@ border: none;</string>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">color: rgb(58, 248, 0);
-border-color: rgb(58, 248, 0);
-border-style: solid;
-border: 1px solid green;</string>
+border:none</string>
                 </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -309,8 +368,8 @@ border: 1px solid green;</string>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <layout class="QVBoxLayout" name="verticalLayout_3">
-                 <item alignment="Qt::AlignLeft">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
                   <widget class="QLabel" name="label_2">
                    <property name="maximumSize">
                     <size>
@@ -321,6 +380,9 @@ border: 1px solid green;</string>
                    <property name="font">
                     <font>
                      <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>true</bold>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -328,14 +390,21 @@ border: 1px solid green;</string>
 border: none;</string>
                    </property>
                    <property name="text">
-                    <string>🔑 Password</string>
+                    <string>🔑 Password </string>
                    </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QLineEdit" name="pwdTxtBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>40</height>
+                    </size>
+                   </property>
                    <property name="styleSheet">
-                    <string notr="true"/>
+                    <string notr="true">border-color:rgb(58, 248, 0);
+border: 3px solid rgb(58, 248, 0);;</string>
                    </property>
                    <property name="text">
                     <string notr="true"/>
@@ -351,44 +420,153 @@ border: none;</string>
                 </layout>
                </widget>
               </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(17, 255, 0,0.5);
+color: white;
+</string>
+                </property>
+                <property name="text">
+                 <string>Sign In</string>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <property name="autoDefault">
+                 <bool>false</bool>
+                </property>
+                <property name="default">
+                 <bool>true</bool>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
              </layout>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton">
-             <property name="minimumSize">
+            <widget class="QLabel" name="label_13">
+             <property name="maximumSize">
               <size>
-               <width>0</width>
-               <height>60</height>
+               <width>16777215</width>
+               <height>24</height>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgba(17, 255, 0,0.5);
-color: white;
-</string>
+              <string notr="true">border-color:yellow;</string>
              </property>
              <property name="text">
-              <string>Sign In</string>
+              <string>Demo Users: </string>
              </property>
-             <property name="checkable">
-              <bool>false</bool>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
-             <property name="autoDefault">
-              <bool>false</bool>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_13">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>40</height>
+              </size>
              </property>
-             <property name="default">
-              <bool>true</bool>
+             <property name="styleSheet">
+              <string notr="true">border:none;</string>
              </property>
-             <property name="flat">
-              <bool>false</bool>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
              </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_15">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border:1px solid yellow;</string>
+                </property>
+                <property name="text">
+                 <string>👤 teacher ,   🔑 teacher123</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_14">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border:1px solid yellow;</string>
+                </property>
+                <property name="text">
+                 <string>👤 admin ,   🔑 admin123</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_16">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border:1px solid yellow;</string>
+                </property>
+                <property name="text">
+                 <string>👤 student ,   🔑 student123</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </item>
           </layout>
          </widget>
         </item>
-        <item>
+        <item alignment="Qt::AlignHCenter">
          <widget class="QFrame" name="frame_5">
+          <property name="minimumSize">
+           <size>
+            <width>460</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
             <width>16777215</width>
@@ -444,41 +622,922 @@ color: white;
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="page_3">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="AddNotification">
        <property name="enabled">
         <bool>true</bool>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QFrame" name="frame_8">
+         <widget class="QFrame" name="frame_15">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cascadia Code</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:1px solid rgb(58, 248, 0);</string>
+          </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
           </property>
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <layout class="QGridLayout" name="gridLayout_2">
-           <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+            <widget class="QLabel" name="NoneNotification_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cascadia Code</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(58, 248, 0);color:black</string>
+             </property>
+             <property name="text">
+              <string>Add New Notification</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="detailsPanel_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <widget class="QLabel" name="label_17">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Cascadia Code</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background:rgb(58, 248, 0);color:black</string>
+                </property>
+                <property name="text">
+                 <string>Title</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPlainTextEdit" name="titleAdd">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Cascadia Code</family>
+                  <pointsize>15</pointsize>
+                  <italic>false</italic>
+                  <bold>true</bold>
+                  <underline>false</underline>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:white</string>
+                </property>
+                <property name="tabChangesFocus">
+                 <bool>false</bool>
+                </property>
+                <property name="documentTitle">
+                 <string/>
+                </property>
+                <property name="lineWrapMode">
+                 <enum>QPlainTextEdit::WidgetWidth</enum>
+                </property>
+                <property name="readOnly">
+                 <bool>false</bool>
+                </property>
+                <property name="plainText">
+                 <string/>
+                </property>
+                <property name="overwriteMode">
+                 <bool>true</bool>
+                </property>
+                <property name="backgroundVisible">
+                 <bool>false</bool>
+                </property>
+                <property name="centerOnScroll">
+                 <bool>false</bool>
+                </property>
+                <property name="placeholderText">
+                 <string>Title</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="line_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_19">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Cascadia Code</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background:rgb(58, 248, 0);;color:clack</string>
+                </property>
+                <property name="text">
+                 <string>Description</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPlainTextEdit" name="desAdd">
+                <property name="font">
+                 <font>
+                  <family>Cascadia Code</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:white</string>
+                </property>
+                <property name="readOnly">
+                 <bool>false</bool>
+                </property>
+                <property name="overwriteMode">
+                 <bool>true</bool>
+                </property>
+                <property name="placeholderText">
+                 <string>Description</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="adminCommands_2">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <widget class="QFrame" name="frame_16">
+                   <property name="styleSheet">
+                    <string notr="true">border:none;</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_11">
+                    <item>
+                     <widget class="QPushButton" name="postButton">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+color: lightgreen;border:1px solid lightgreen;
+}
+QPushButton::hover{
+color: black;border:1px solid black;background-color:lightgreen;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Add Post</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="delNotification_2">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+color:red; border:1px solid; border-color:red;
+}
+
+QPushButton::hover{
+color:black; border:1px solid; border-color:white;background-color:red;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Cancel</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="AddNewUser">
+       <layout class="QVBoxLayout" name="verticalLayout_17">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QFrame" name="frame_17">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>817</width>
+            <height>559</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cascadia Code</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:1px solid rgb(58, 248, 0);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+            <widget class="QLabel" name="NoneNotification_3">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cascadia Code</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(58, 248, 0);color:black</string>
+             </property>
+             <property name="text">
+              <string>Add new User</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="detailsPanel_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QFrame" name="frame_20">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_20">
+                   <property name="minimumSize">
+                    <size>
+                     <width>170</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(58, 248, 0);color:black</string>
+                   </property>
+                   <property name="text">
+                    <string>UserName</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPlainTextEdit" name="usrTxt">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>15</pointsize>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <underline>false</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:white</string>
+                   </property>
+                   <property name="tabChangesFocus">
+                    <bool>false</bool>
+                   </property>
+                   <property name="documentTitle">
+                    <string/>
+                   </property>
+                   <property name="lineWrapMode">
+                    <enum>QPlainTextEdit::WidgetWidth</enum>
+                   </property>
+                   <property name="readOnly">
+                    <bool>false</bool>
+                   </property>
+                   <property name="plainText">
+                    <string/>
+                   </property>
+                   <property name="overwriteMode">
+                    <bool>true</bool>
+                   </property>
+                   <property name="backgroundVisible">
+                    <bool>false</bool>
+                   </property>
+                   <property name="centerOnScroll">
+                    <bool>false</bool>
+                   </property>
+                   <property name="placeholderText">
+                    <string>User Name</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_21">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="label_21">
+                   <property name="minimumSize">
+                    <size>
+                     <width>170</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(58, 248, 0);;color:clack</string>
+                   </property>
+                   <property name="text">
+                    <string>User Password</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPlainTextEdit" name="passTxt">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:white</string>
+                   </property>
+                   <property name="lineWrapMode">
+                    <enum>QPlainTextEdit::WidgetWidth</enum>
+                   </property>
+                   <property name="readOnly">
+                    <bool>false</bool>
+                   </property>
+                   <property name="overwriteMode">
+                    <bool>true</bool>
+                   </property>
+                   <property name="backgroundVisible">
+                    <bool>false</bool>
+                   </property>
+                   <property name="placeholderText">
+                    <string>User Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_19">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <widget class="QLabel" name="label_22">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(58, 248, 0);color:black</string>
+                   </property>
+                   <property name="text">
+                    <string>User Type:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="radioButton">
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+color: rgb(58, 248, 0);
+}
+QRadioButton::checked{
+background-color: rgb(58, 248, 0);
+color:black;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Admin</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="radioButton_3">
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+color: rgb(58, 248, 0);
+}
+QRadioButton::checked{
+background-color: rgb(58, 248, 0);
+color:black;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Teacher</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="radioButton_2">
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+color: rgb(58, 248, 0);
+}
+QRadioButton::checked{
+background-color: rgb(58, 248, 0);
+color:black;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Student</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignBottom">
+               <widget class="QFrame" name="adminCommands_3">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QFrame" name="frame_18">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>60</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>60</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border:none;</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                    <item>
+                     <widget class="QPushButton" name="addUserBtn_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+color: lightgreen;border:1px solid lightgreen;
+}
+QPushButton::hover{
+color: black;border:1px solid black;background-color:lightgreen;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Add User</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="cancelBtn">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+color:red; border:1px solid; border-color:red;
+}
+
+QPushButton::hover{
+color:black; border:1px solid; border-color:white;background-color:red;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Cancel</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Main">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QFrame" name="frame_12">
+          <property name="styleSheet">
+           <string notr="true">background:rgb(58, 248, 0)
+
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="font">
+              <font>
+               <family>Cascadia Code</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:blac</string>
+             </property>
+             <property name="text">
+              <string>Welcome : Abdullah Noor</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="addUserBtn">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cascadia Code</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color:purple; color:white; border: none
+}
+QPushButton:hover{
+background-color:purple; color:white; border: 3px solid white
+}
+</string>
+             </property>
+             <property name="text">
+              <string>+ User</string>
+             </property>
+             <property name="default">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="addPost">
+             <property name="minimumSize">
+              <size>
+               <width>140</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cascadia Code</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color:blue; color:white; border: none
+}
+
+QPushButton:hover{
+background-color:blue
+; color:white; border: 3px solid white
+}</string>
+             </property>
+             <property name="text">
+              <string>+ Notification</string>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cascadia Code</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: darkred;color:white; 
+border:none;
+}
+
+QPushButton:hover{
+background-color: red;color:white; border:2px solid white;
+
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Sign Out</string>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_8">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(34, 34, 34);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
             <widget class="QFrame" name="frame_9">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
              <property name="maximumSize">
               <size>
-               <width>16777215</width>
+               <width>8473986</width>
                <height>16777215</height>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">border:1px solid green</string>
+              <string notr="true">border:1px solid rgb(58, 248, 0);
+width:2em;</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -488,16 +1547,140 @@ color: white;
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_8">
               <item>
-               <widget class="QListView" name="listView">
+               <widget class="QFrame" name="frame_11">
                 <property name="styleSheet">
-                 <string notr="true">border:1px solid green</string>
+                 <string notr="true">background:rgb(58, 248, 0);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(58, 248, 0);color:black</string>
+                   </property>
+                   <property name="text">
+                    <string>NOTIFICATIONS</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="font">
+                    <font>
+                     <family>Source Code Pro</family>
+                     <italic>true</italic>
+                     <bold>true</bold>
+                     <underline>false</underline>
+                     <kerning>true</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:black</string>
+                   </property>
+                   <property name="text">
+                    <string>10</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QListWidget" name="listWidget">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Cascadia Code</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QListWidget{
+ color:black; border:1px solid rgb(58, 248, 0);
+}
+
+QListWidget::item{
+	border: 1px solid rgb(58, 248, 0);
+color: white;
+
+}
+
+QListWidget::item:hover{
+	border: 3px solid rgb(58, 248, 0);
+
+}
+
+QListWidget::item:selected{
+	border: 1px solid rgb(58, 248, 0);
+background-color:rgb(58, 248, 0);
+color:rgb(34, 34, 34);
+}</string>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
+                </property>
+                <property name="movement">
+                 <enum>QListView::Static</enum>
+                </property>
+                <property name="flow">
+                 <enum>QListView::TopToBottom</enum>
+                </property>
+                <property name="isWrapping" stdset="0">
+                 <bool>false</bool>
+                </property>
+                <property name="resizeMode">
+                 <enum>QListView::Adjust</enum>
+                </property>
+                <property name="layoutMode">
+                 <enum>QListView::SinglePass</enum>
+                </property>
+                <property name="spacing">
+                 <number>5</number>
+                </property>
+                <property name="viewMode">
+                 <enum>QListView::ListMode</enum>
+                </property>
+                <property name="uniformItemSizes">
+                 <bool>true</bool>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
                 </property>
                </widget>
               </item>
              </layout>
             </widget>
            </item>
-           <item row="0" column="1">
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QFrame" name="frame_10">
              <property name="enabled">
               <bool>true</bool>
@@ -514,14 +1697,271 @@ color: white;
                <height>0</height>
               </size>
              </property>
+             <property name="font">
+              <font>
+               <family>Cascadia Code</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
-              <string notr="true">border:1px solid green</string>
+              <string notr="true">border:1px solid rgb(58, 248, 0);</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="NoneNotification">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Cascadia Code</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background:rgb(58, 248, 0);color:black</string>
+                </property>
+                <property name="text">
+                 <string>Select a Notification To view Details</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="detailsPanel">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>300</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(58, 248, 0);color:black</string>
+                   </property>
+                   <property name="text">
+                    <string>Title</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPlainTextEdit" name="titleText">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>15</pointsize>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <underline>false</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:white</string>
+                   </property>
+                   <property name="tabChangesFocus">
+                    <bool>false</bool>
+                   </property>
+                   <property name="documentTitle">
+                    <string/>
+                   </property>
+                   <property name="lineWrapMode">
+                    <enum>QPlainTextEdit::WidgetWidth</enum>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                   <property name="plainText">
+                    <string/>
+                   </property>
+                   <property name="overwriteMode">
+                    <bool>true</bool>
+                   </property>
+                   <property name="backgroundVisible">
+                    <bool>false</bool>
+                   </property>
+                   <property name="centerOnScroll">
+                    <bool>false</bool>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Title</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(58, 248, 0);;color:clack</string>
+                   </property>
+                   <property name="text">
+                    <string>Description</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPlainTextEdit" name="desText">
+                   <property name="font">
+                    <font>
+                     <family>Cascadia Code</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:white</string>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                   <property name="overwriteMode">
+                    <bool>true</bool>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Description</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="adminCommands">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_3">
+                    <item>
+                     <widget class="QLabel" name="label_18">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(34, 34, 34); background-color:rgb(58, 248, 0);</string>
+                      </property>
+                      <property name="text">
+                       <string>Available Commands</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_14">
+                      <property name="styleSheet">
+                       <string notr="true">border:none;</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_10">
+                       <item>
+                        <widget class="QPushButton" name="pushButton_6">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+color: lightgreen;border:1px solid lightgreen;
+}
+QPushButton::hover{
+color: black;border:1px solid black;background-color:lightgreen;
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Update Edits</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_4">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+color:red; border:1px solid; border-color:red;
+}
+
+QPushButton::hover{
+color:black; border:1px solid; border-color:white;background-color:red;
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Delete Notification</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
              </property>
             </widget>
            </item>
@@ -539,7 +1979,7 @@ color: white;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>861</width>
      <height>25</height>
     </rect>
    </property>
@@ -549,7 +1989,7 @@ color: white;
   </widget>
   <widget class="QStatusBar" name="statusbar">
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(51, 55, 62);</string>
+    <string notr="true">background-color:rgb(34, 34, 34);</string>
    </property>
   </widget>
  </widget>
