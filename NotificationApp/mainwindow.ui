@@ -1379,7 +1379,7 @@ color:black; border:1px solid; border-color:white;background-color:red;
               <string notr="true">color:blac</string>
              </property>
              <property name="text">
-              <string>Welcome : Abdullah Noor</string>
+              <string>Welcome </string>
              </property>
             </widget>
            </item>

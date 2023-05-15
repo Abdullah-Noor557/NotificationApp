@@ -202,6 +202,7 @@ void MainWindow::on_pushButton_clicked()
         descriptionTxt->setReadOnly(true);
         ui->adminCommands->hide();
         ui->addPost->hide();
+        ui->addUserBtn->hide();
 
     }else if(currentUserType == faculty)
     {
@@ -214,6 +215,7 @@ void MainWindow::on_pushButton_clicked()
         descriptionTxt->setReadOnly(false);
         ui->adminCommands->show();
         ui->addPost->show();
+        ui->addUserBtn->hide();
 
 
         ui->pushButton_4->hide();
@@ -228,8 +230,7 @@ void MainWindow::on_pushButton_clicked()
         descriptionTxt->setReadOnly(false);
         ui->adminCommands->show();
         ui->addPost->show();
-
-
+        ui->addUserBtn->show();
         ui->pushButton_4->show();
 
     }
