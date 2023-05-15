@@ -1,0 +1,9 @@
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/tutorial.dir
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/edit_cache.dir
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/rebuild_cache.dir
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/list_install_components.dir
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/install.dir
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/install/local.dir
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/install/strip.dir
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/tutorial_autogen_timestamp_deps.dir
+C:/Users/anoor/Documents/build-tutorial-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/qtc_CodeBlocks_Ninja/CMakeFiles/tutorial_autogen.dir
